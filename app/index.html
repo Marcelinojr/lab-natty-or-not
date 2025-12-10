@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Histórias com IA - Natty or Not</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Gerador de Histórias Mágicas com IA</h1>
+            <p class="subtitle">Crie histórias únicas e personalizadas com o poder da Inteligência Artificial</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>🎭 Configure sua História</h2>
+                
+                <div class="form-group">
+                    <label for="genre">Gênero da História:</label>
+                    <select id="genre">
+                        <option value="fantasia">🧙‍♂️ Fantasia</option>
+                        <option value="ficcao-cientifica">🚀 Ficção Científica</option>
+                        <option value="aventura">🗺️ Aventura</option>
+                        <option value="misterio">🔍 Mistério</option>
+                        <option value="romance">💕 Romance</option>
+                        <option value="terror">👻 Terror</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="protagonist">Nome do Protagonista:</label>
+                    <input type="text" id="protagonist" placeholder="Ex: Luna, João, Zara..." />
+                </div>
+
+                <div class="form-group">
+                    <label for="setting">Cenário Principal:</label>
+                    <input type="text" id="setting" placeholder="Ex: Floresta mágica, nave espacial, cidade medieval..." />
+                </div>
+
+                <div class="form-group">
+                    <label for="element">Elemento Especial:</label>
+                    <input type="text" id="element" placeholder="Ex: espada lendária, portal do tempo, criatura misteriosa..." />
+                </div>
+
+                <button id="generateBtn" class="generate-btn">
+                    🎨 Gerar História Mágica
+                </button>
+            </section>
+
+            <section class="output-section" id="outputSection" style="display: none;">
+                <h2>📖 Sua História Gerada</h2>
+                <div class="story-container" id="storyContainer">
+                    <!-- A história será inserida aqui -->
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="regenerateBtn" class="action-btn">
+                        🔄 Gerar Nova História
+                    </button>
+                    <button id="copyBtn" class="action-btn">
+                        📋 Copiar História
+                    </button>
+                    <button id="shareBtn" class="action-btn">
+                        🔗 Compartilhar
+                    </button>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h3>🤖 Como Funciona?</h3>
+                <p>
+                    Esta aplicação usa algoritmos de geração de texto baseados em IA para criar 
+                    histórias únicas e criativas. Cada história é gerada dinamicamente com base 
+                    nas suas escolhas, garantindo uma experiência única a cada vez!
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">✨</span>
+                        <span>Histórias 100% únicas</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <span>Personalizadas para você</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <span>Geração instantânea</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>💡 Projeto desenvolvido para o desafio <strong>#LabDIONattyOrNot</strong></p>
+            <p>🚀 Feito com IA Generativa e muito ☕</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
